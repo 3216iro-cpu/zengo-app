@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>今日の禅語</title>
+
+<style>
+body{
+    margin:0;
+    background:#f5f1e8;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+img{
+    max-width:90%;
+    max-height:90%;
+    border-radius:20px;
+}
+</style>
+
+</head>
+
+<body>14:07 2026/06/24
+
+<img id="card">
+
+<script>
+
+const cards = [
+    "hanamatsuri.png",
+    "kissako.png",
+    "nichinichi.png",
+    "buji.png",
+    "ichigoichie.png",
+    "kankyakka.png"
+];
+
+const randomIndex = Math.floor(Math.random() * cards.length);
+
+document.getElementById("card").src = cards[randomIndex];
+
+</script>
+
+</body>
+</html>
